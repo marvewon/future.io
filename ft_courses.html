@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <!-- using google fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+     <!-- using the iconcout cdn -->
+     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <title>About | Page</title>
+</head>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        border:0;
+        outline: 0;
+        list-style: none;
+        box-sizing: border-box;
+        text-decoration: none;
+    }
+
+    :root{
+
+        --color-primary: #009EFF;
+        --color-success: #00bf8e;
+        --color-danger: #f75842;
+        --color-warning: #f7c94b;
+        --color-warning-variant: rgba(247, 88, 66, 0.4);
+        --color-white: #fff;
+        --color-black: #0000;
+        --color-light: rgba(225, 255, 255, 0.7);
+
+        --color-bg: #0E5E6F;
+        --color-bg1: #3A8891;
+        --color-bg2: #424890;
+
+        --container-width-lg: 90%;
+        --container-width-md: 98%;
+        --container-width-sm: 94%;
+
+        --transition: all 400ms ease;
+        }
+        body{
+            background: var(--color-bg);
+            color:var(--color-white);
+            line-height: 1.7rem;
+            font-family: "Montserrat", "Sans-Serif";
+        }
+        .container{
+            width: var(--container-width-lg);
+            margin: auto;
+        }
+        section{
+            padding: 6rem;
+        }
+        section h2{
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+        h1,
+        h2,
+        h3,
+        h4,
+        h5{
+            line-height: 1.2rem;
+        }
+        h1{
+            font-size: 1.2rem;
+        }
+        h2{
+            font-size: 2.4rem;
+        }
+        h3{
+            font-size: 1.6rem;
+        }
+        h4{
+            font-size: 1.3rem;
+        }
+        a{
+            color: var(--color-white);
+        }
+        img{
+            width: 100%;
+            display: block;
+            object-fit: cover;
+        }
+        .btn{
+            display: inline-block;
+            background: var(--color-white);
+            color: var(--color-black);
+            padding: 1rem 2rem;
+            border: 1px solid transparent;
+            font-weight: 500%;
+            transition: var(--transition);
+            border-radius: 5%;
+
+        }
+        .btn:hover{
+            background: transparent;
+            color: var(--color-white);
+            border-color: var(--color-white);
+        }
+        nav{
+            width: 100vw;
+            height: 5rem;
+            position: fixed;
+            top:0;
+            z-index: 11;
+        }
+        .nav_bar_container{
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav_bar_container .ft_logo {
+            font-weight: bold;
+        }
+        nav button{
+            display: none;
+        }
+        .nav_bar_menu{
+            display: flex;
+            align-items: center;
+            gap: 4rem;
+        }
+        .nav_bar_menu a{
+            font-size: 0.9rem;
+            transition: var(--transition);
+        }
+        .nav_bar_menu:nth-child(5){
+            font-size: bold;
+        }
+        .nav_bar_menu a:hover{
+            color: var(--color-bg2);
+        }
+        header{
+            position: relative;
+            top: 5rem;
+            overflow: hidden;
+            height: 70vh;
+            margin-bottom: 7rem;
+            background-image: url(./images/thisisengineering-raeng-8hgmG03spF4-unsplash.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .header_container{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            height: 100%;
+        }
+        .header_container h2{
+            margin: 5rem 0 2rem 0;
+        }
+        .header_container p{
+            line-height: 1.7rem;
+        }
+        .header_container img{
+            width: 20rem;
+            height: 20rem;
+            margin: 0 5rem;
+        }
+</style>
+
+<body>
+    <nav>
+        <div class="container nav_bar_container">
+            <a href="index.html" class="ft_logo">The Future</a>
+            <ul class="nav_bar_menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ft_about.html">About</a></li>
+                <li><a href="ft_courses.html">Courses</a></li>
+                <li><a href="ft_contact.html">Contact</a></li>
+                <li><a href="ft_sign_up.html">SignUp</a></li>
+            </ul>
+            <button id="open_menu_bar"><i class="uil uil-bars"></i></button>
+            <button id="close_menu_bar"><i class="uil uil-multiply"></i></button>
+        </div>
+    </nav>
+
+
+    <header>
+        <div class="container header_container">
+            <div class="header-left">
+                
+            </div>
+            <div class="header-right">
+               
+            </div>
+        </div>
+    </header>
+    <style>
+
+        .btn {
+        display: inline-block;
+        background: var(--color-white);
+        color: var(--color-black);
+        padding: 1rem 2rem;
+        border: 1px solid transparent;
+        font-weight: 500;
+        transition: var(--transition);
+        border-radius: 5%;
+        }
+        .btn:hover {
+        background: transparent;
+        color: var(--color-white);
+        border-color: var(--color-white);
+        }
+        .btn-primary {
+        background: var(--color-danger);
+        color: var(--color-white);
+        }
+
+       .ft_staff_avatar{
+        width: 6rem;
+        height: 6rem;
+        overflow: hidden;
+        margin: 0 auto 0;
+        border-radius: 50%;
+        }
+        .ft_staff_container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+    .ft_staff{
+        text-align: center;
+        margin: 2rem auto 2rem;
+    }
+
+    .ft_staff_info h4{
+        line-height: 2rem;
+        margin: 1rem 0 0;
+    }
+
+    .future_courses
+    {
+    margin-top: 5rem;
+    }
+    .futures_courses_container
+    {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    }
+    .ft_course{
+    background: var(--color-bg1);
+    text-align: center;
+    border: 1px solid transparent;
+    transition:var(--transition);
+    }
+    .ft_course:hover{
+    background: transparent;
+    border-color: var(--color-primary);
+    }
+    .ft_course_info
+    {
+    padding: .8rem;
+    }
+
+    .ft_course_info .btn-primary
+    {
+    margin: 1rem;
+    }
+    .ft_course_info p{
+    font-size: 0.9rem;
+    margin: 1.2rem 0 2rem;
+    }
+
+    .footer{
+    background: var(--color-bg1);
+    padding: 5rem;
+    font-size: 0.9rem;
+    }
+
+    .footer_container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5rem;
+    }
+    .footer_container > div h4{
+    margin-bottom: 1.2rem;
+    }
+    .footer_1 p{
+    margin: 0 0 2rem;
+    }
+    .footer ul li a:hover{
+    text-decoration: underline;
+    }
+    </style>
+
+    <section class="future_courses">
+    <h2>Futures Popular Courses</h2>
+    <div class="container futures_courses_container">
+        <article class="ft_course">
+            <div id="ft_course_imag">
+                <img src="./images/course1.jpg" alt="">
+            </div>
+            <div class="ft_course_info">
+                <h4>The complete website development course</h4>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                </p>
+                <a href="ft_course.html" class="btn btn-primary">Learn More</a>
+            </div>
+        </article>
+
+        <article class="ft_course">
+            <div id="ft_course_imag">
+                <img src="./images/course2.jpg" alt="">
+            </div>
+
+            <div class="ft_course_info">
+                <h4>Complete Python Programming Course</h4>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                </p>
+                <a href="ft_course.html" class="btn btn-primary">Learn More</a>
+            </div>
+        </article>
+
+        <article class="ft_course">
+            <div id="ft_course_imag">
+                <img src="./images/course3.jpg" alt="">
+            </div>
+
+            <div class="ft_course_info">
+                <h4>Learn Javascript, Basic to advance</h4>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                </p>
+                <a href="ft_course.html" class="btn btn-primary">Learn More</a>
+            </div>
+        </article>
+
+        <article class="ft_course">
+            <div id="ft_course_imag">
+                <img src="./images/course4.jpg" alt="">
+            </div>
+
+            <div class="ft_course_info">
+                <h4>Beginer Java Programming</h4>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                </p>
+                <a href="ft_course.html" class="btn btn-primary">Learn More</a>
+            </div>
+        </article>
+
+        <article class="ft_course">
+            <div id="ft_course_imag">
+                <img src="./images/course1.jpg" alt="">
+            </div>
+            <div class="ft_course_info">
+                <h4>The complete website development course</h4>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                </p>
+                <a href="ft_course.html" class="btn btn-primary">Learn More</a>
+            </div>
+        </article>
+
+        <article class="ft_course">
+            <div id="ft_course_imag">
+                <img src="./images/course2.jpg" alt="">
+            </div>
+
+            <div class="ft_course_info">
+                <h4>The complete website development course</h4>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                </p>
+                <a href="ft_course.html" class="btn btn-primary">Learn More</a>
+            </div>
+        </article>
+
+        <article class="ft_course">
+            <div id="ft_course_imag">
+                <img src="./images/course3.jpg" alt="">
+            </div>
+
+            <div class="ft_course_info">
+                <h4>Complete UI/UX Design Course</h4>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                </p>
+                <a href="ft_course.html" class="btn btn-primary">Learn More</a>
+            </div>
+        </article>
+
+        <article class="ft_course">
+            <div id="ft_course_imag">
+                <img src="./images/course4.jpg" alt="">
+            </div>
+
+            <div class="ft_course_info">
+                <h4>The complete website development course</h4>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                </p>
+                <a href="ft_course.html" class="btn btn-primary">Learn More</a>
+            </div>
+        </article>
+
+        <article class="ft_course">
+            <div id="ft_course_imag">
+                <img src="./images/course1.jpg" alt="">
+            </div>
+            <div class="ft_course_info">
+                <h4>The complete website development course</h4>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                </p>
+                <a href="ft_course.html" class="btn btn-primary">Learn More</a>
+            </div>
+        </article>
+
+        <article class="ft_course">
+            <div id="ft_course_imag">
+                <img src="./images/course2.jpg" alt="">
+            </div>
+
+            <div class="ft_course_info">
+                <h4>The complete website development course</h4>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                </p>
+                <a href="ft_course.html" class="btn btn-primary">Learn More</a>
+            </div>
+        </article>
+
+        <article class="ft_course">
+            <div id="ft_course_imag">
+                <img src="./images/course3.jpg" alt="">
+            </div>
+
+            <div class="ft_course_info">
+                <h4>The complete website development course</h4>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                </p>
+                <a href="ft_course.html" class="btn btn-primary">Learn More</a>
+            </div>
+        </article>
+
+        <article class="ft_course">
+            <div id="ft_course_imag">
+                <img src="./images/course4.jpg" alt="">
+            </div>
+
+            <div class="ft_course_info">
+                <h4>The complete website development course</h4>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                </p>
+                <a href="ft_course.html" class="btn btn-primary">Learn More</a>
+            </div>
+        </article>
+    </div>
+</seection>
+
+    <footer class="footer">
+        <div class="container footer_container">
+            <div class="footer_1">
+                <a href="index" class="footer_logo"><h4>The Future</h4></a>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non soluta fuga culpa, pariatur dolore doloribus.
+                </p>
+            </div>
+
+            <div class="footer_2">
+                <h4>Easy links</h4>
+               <ul class="easy_link">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ft_about.html">About</a></li>
+                <li><a href="ft_courses.html">Courses</a></li>
+               </ul>
+            </div>
+
+            <div class="footer_3">
+                <h4>Policy</h4>
+               <ul class="privacy">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms and Condition</a></li>
+                <li><a href="#">Refund Policy</a></li>
+               </ul>
+            </div>
+
+            <div class="footer_4">
+                <h4>Contact Us</h4>
+               <div>
+                    <p>+234 9066492519</p>
+                    <p>devoma64@gmail.com</p>
+                </div>         
+                <ul class="footer_socials">
+                 <li><i class="uil uil-facebook-f"></i></li>
+                 <li><i class="uil uil-instagram-alt"></i></li>
+                 <li><i class="uil uil-twitter"></i></li>
+                 <li><i class="uil uil-linkedin"></i></li>
+                </ul>
+            </div>
+
+            <div class="footer_copyright">
+                <small>Copyright &copy; The Future website competition</small>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,391 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+/* workind with css variables */
+:root {
+  --color-primary: #009EFF;
+  --color-success: #00bf8e;
+  --color-warning: #f7c94b;
+  --color-danger: #f75842;
+  
+  --color-danger-variant: rgba(247, 88, 66, 0.4);
+  --color-white: #fff;
+  --color-light: rgba(255, 255, 255, 0.7);
+  --color-black: #000;
+  --color-bg: #0E5E6F;
+  --color-bg1: #3A8891;
+  --color-bg2: #424890;
+
+  --container-width-lg: 83%;
+  --container-width-md: 98%;
+  --container-width-sm: 94%;
+
+  --transition: all 400ms ease;
+}
+body {
+  font-family: "Montserrat", "Sans-Serif";
+  line-height: 1.7;
+  color: var(--color-white);
+  background: var(--color-bg);
+}
+.container {
+  width: var(--container-width-lg);
+  margin: auto;
+}
+section {
+  padding: 6rem 0;
+}
+section h2 {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  line-height: 1.2;
+}
+h1 {
+  font-size: 1.2rem;
+}
+h2 {
+  font-size: 2.4rem;
+  text-align: center;
+}
+h3 {
+  font-size: 1.6rem;
+}
+h4 {
+  font-size: 1.3rem;
+}
+a {
+  color: var(--color-white);
+}
+img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+.btn {
+  display: inline-block;
+  background: var(--color-white);
+  color: var(--color-black);
+  padding: 1rem 2rem;
+  border: 1px solid transparent;
+  font-weight: 500;
+  transition: var(--transition);
+  border-radius: 5%;
+}
+.btn:hover {
+  background: transparent;
+  color: var(--color-white);
+  border-color: var(--color-white);
+}
+.btn-primary {
+  background: var(--color-danger);
+  color: var(--color-white);
+}
+
+/* ===================== STYLING NAVBAR ================ */
+
+/* change nav bar styles on scroll using javascript */
+.window_scroll
+{
+  background: var(--color-bg1);
+  box-shadow: 0 1rem 2rem rgba(179, 174, 174, 0.4);
+  border-bottom: 2px solid var(--color-danger);
+}
+.window_scroll_nav_bar_menu a
+{
+  color: var(--color-white);
+  font-weight: bold;
+}
+
+.window_scroll_nav_bar_menu a:hover
+{
+  color: var(--color-white);
+  font-weight: bold;
+}
+nav {
+  width: 100vw;
+  height: 5rem;
+  position: fixed;
+  top: 0;
+  z-index: 11;
+}
+.nav_bar_container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav button {
+  display: none;
+}
+.nav_bar_menu {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+.nav_bar_menu a {
+  font-size: 0.9rem;
+  transition: var(--transition);
+}
+.nav_bar_menu a:hover {
+  color: var(--color-bg2);
+}
+
+/* <===============HEADER=============>*/
+
+header {
+  position: relative;
+  top: 7rem;
+  overflow: hidden;
+  height: 70vh;
+  margin-bottom: 7rem;
+}
+.header_container {
+  display: grid;
+  grid-template-columns: 2fr 1.5fr;
+  align-items: center;
+  gap: 4rem;
+  height:100%;
+}
+
+.header_left h1 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  line-height: normal;
+}
+.header_left p {
+  margin: 1rem 0 2.4rem;
+  text-align: justify;
+}
+.header_right p{
+  padding: 1rem 0 .2rem;
+}
+.futures_skills
+{
+  background:var(--color-bg1)
+}
+.futures_skills h1{
+  /* color: var(--color-danger); */
+  line-height: 1;
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
+.futures_skills_container
+{
+  display: grid;
+  grid-template-columns: 40% 60%;
+  gap: 4rem;
+}
+
+.futures_skills_left p
+{
+margin: 1rem 0 3rem;
+}
+.futures_skills_left img{
+  width: 70%;
+  margin: 0 3rem 2rem 4rem;
+}
+.futures_skills_right
+{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+.future
+{
+  background: var(--color-bg);
+  padding: 1.5rem;
+  border-radius: 1rem;
+}
+.future:hover
+{
+  box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
+}
+
+.future:nth-child(2) .future_icons{
+  background: var(--color-danger);
+}
+.future:nth-child(3) .future_icons{
+  background: var(--color-success);
+}
+.future:nth-child(4) .future_icons{
+  background: var(--color-warning);
+}
+.future:nth-child(5) .future_icons{
+  background: var(--color-success);
+}
+
+.future_icons
+{
+  background: var(--color-primary);
+  padding: 0.8rem;
+  border-radius: 0.9rem;
+}
+.future h5{
+  margin: 2rem 0 1rem;
+  font-size: 1rem;
+}
+.future p{
+ margin: 1rem 0 1rem;
+}
+.future_courses
+{
+  margin-top: 5rem;
+}
+.futures_courses_container
+{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+.ft_course{
+  background: var(--color-bg1);
+  text-align: center;
+  border: 1px solid transparent;
+  transition:var(--transition);
+}
+.ft_course:hover{
+  background: transparent;
+  border-color: var(--color-primary);
+}
+.ft_course_info
+{
+  padding: .8rem;
+}
+
+.ft_course_info .btn-primary
+{
+  margin: 1rem;
+}
+.ft_course_info p{
+  font-size: 0.9rem;
+  margin: 1.2rem 0 2rem;
+}
+.ft_faqs
+{
+  background: var(--color-bg1);
+  box-shadow: inset 0 0 3rem rgba(0, 0, 0, 0.5);
+}
+.ft_faqs h2
+{
+  margin: 2rem;
+  border-bottom: 2px var(--color-black);
+}
+.ft_faqs_container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.ft_faq
+{
+  padding: 2rem;
+  display: flex;
+  gap: 1.4rem;
+  align-items: center;
+  height: fit-content;
+  background: var(--color-primary);
+}
+.ft_faq h4
+{
+font-size: 1rem;
+line-height: 2.2;
+
+}
+
+.ft_faqs_icon
+{
+  align-self: flex-start;
+  font-size: 1.2rem;
+}
+
+.ft_faq p
+{
+  margin-top: 0.8rem;
+  text-align: justify;
+}
+.testimonies_container{
+  overflow-x: hidden;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.testimonies{
+  padding-top: 2rem;
+  text-align: center;
+}
+.avatar{
+  width: 6rem;
+  height: 6rem;
+  overflow: hidden;
+  margin: 0 auto 0;
+  border-radius: 50%;
+
+}
+.testimonies_container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+}
+
+.testimonies_info{
+  padding: 2rem;
+}
+
+.footer{
+  background: var(--color-bg1);
+  padding: 5rem;
+  font-size: 0.9rem;
+}
+
+.footer_container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5rem;
+}
+.footer_container > div h4{
+  margin-bottom: 1.2rem;
+}
+.footer_1 p{
+  margin: 0 0 2rem;
+}
+.footer ul li a:hover{
+  text-decoration: underline;
+}
+
+@media screen  and (max-width: 1024px){
+  .container{
+    width: var(--container-width-md);
+  }
+  h1{
+    font-size: 2.2rem;
+  }
+  h2{
+    font-size: 1.7rem;
+  }
+  h4{
+    font-size: 1.4rem;
+  }
+  h5{
+    font-size: 1.2rem;
+  }
+  nav button{
+    display: inline-block;
+    background: transparent;
+    font-size: 1.8rem;
+    color:var(--color-white);
+    cursor: pointer;
+  }
+}
